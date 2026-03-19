@@ -1,6 +1,6 @@
 ---
 name: self-documenting-code
-description: A manifesto and guide for writing self-documenting code with AI coding agents.
+description: A guide for writing self-documenting code
 ---
 
 Code should be self documenting
