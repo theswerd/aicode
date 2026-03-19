@@ -12,7 +12,7 @@ const Footer = forwardRef<HTMLElement>(function Footer(_props, ref) {
 
   return (
     <section ref={ref} className="sticky bottom-0 px-3 pb-10 pt-8 sm:px-6">
-      <div className="mx-auto max-w-4xl">
+      <div className="mx-auto max-w-3xl px-3 sm:px-6">
         <div className="mb-5 flex gap-3">
           <button
             type="button"

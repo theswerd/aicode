@@ -48,9 +48,9 @@ function App() {
     <>
       {/* Fixed hero — stays in place behind everything */}
       <section className="sticky top-0">
-        <div className="mx-auto max-w-3xl px-3 py-6 sm:px-6 sm:py-10">
+        <div className="mx-auto max-w-3xl px-3 py-3 sm:px-6 sm:py-5">
           <p className="mb-6 text-xl">Be intentional about how AI changes your codebase.</p>
-          <p className="mb-8">
+          <p className="mb-4">
             As AI Coding Agents write more code, it's more important than ever that we're
             intentional about the code it writes.
           </p>
