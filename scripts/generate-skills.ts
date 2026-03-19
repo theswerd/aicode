@@ -9,7 +9,7 @@ const outFile = join(outDir, "SKILL.md");
 
 const content = `---
 name: self-documenting-code
-description: A guide for writing self-documenting code with AI coding agents.
+description: A guide for writing self-documenting code
 ---
 
 ${getDocumentText()}
