@@ -100,7 +100,7 @@ function App() {
         <div className="mx-auto max-w-4xl border border-stone-200 bg-white shadow-lg">
           <div className="mx-auto max-w-3xl wrap-break-word px-3 sm:pb-4 pt-4 sm:px-6 sm:pt-8">
             <p className="mb-6">
-              <strong>Code should be self documenting.</strong>
+              <strong>Code should be self documenting</strong>
             </p>
             <p className="mb-6">
               How you split logic into functions and shape the data they pass around determines how
