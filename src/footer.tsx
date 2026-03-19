@@ -1,43 +1,17 @@
-import { forwardRef, useState } from "react";
-import CursorLogo from "./cursor";
+import { forwardRef } from "react";
+import NpxButton from "./npx-button";
+import CursorButton from "./cursor-button";
 
 const Footer = forwardRef<HTMLElement>(function Footer(_props, ref) {
-  const [copied, setCopied] = useState(false);
-
-  const handleCopy = () => {
-    navigator.clipboard.writeText("npx skills add theswerd/aicode");
-    setCopied(true);
-    setTimeout(() => setCopied(false), 3000);
-  };
-
   return (
     <section ref={ref} className="sticky bottom-0 px-3 pb-10 pt-8 sm:px-6">
       <div className="mx-auto max-w-3xl px-3 sm:px-6">
         <div className="mb-5 flex gap-3">
-          <button
-            type="button"
-            onClick={handleCopy}
-            className="relative cursor-pointer truncate rounded px-2 py-1.5 text-xs transition-colors hover:brightness-95 sm:px-3 sm:py-2 sm:text-sm"
-            style={{ backgroundColor: "rgb(235, 234, 229)" }}
-          >
-            <code className="select-all" style={{ visibility: copied ? "hidden" : "visible" }}>
-              npx skills add theswerd/aicode
-            </code>
-            {copied && (
-              <span className="absolute inset-0 flex items-center justify-center">Copied!</span>
-            )}
-          </button>
-          <button
-            type="button"
-            className="flex shrink-0 cursor-pointer items-center gap-2 whitespace-nowrap rounded px-3 py-1.5 text-xs transition-colors hover:brightness-95 sm:px-4 sm:py-2 sm:text-sm"
-            style={{ backgroundColor: "rgb(235, 234, 229)" }}
-          >
-            <CursorLogo />
-            Add to Cursor
-          </button>
+          <NpxButton />
+          <CursorButton />
         </div>
         <p className="mb-5 max-w-2xl text-stone-600">
-          I believe these patterns lead to scalable codebases, and scalable codebases lead to faster iteration cycles and better software. 
+          I believe these patterns lead to scalable codebases, and scalable codebases lead to faster iteration cycles and better software.
           <br/>
           <br/>
           Or maybe I'm out of date.
